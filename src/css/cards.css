@@ -1,0 +1,45 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 35%;
+    padding: 1rem;
+    border-radius: 1rem;
+    background-color: var(--clr-text-second);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin: 0 auto;
+    z-index: 1;
+}
+
+.card-tittle {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    padding: 0rem 2rem;
+}
+
+.card hr {
+    border: 0;
+    height: 5px;
+    width: 100%;
+    background: var(--clr-accent-dark);
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+
+
+@media screen and (max-width: 768px) {
+
+    .card {
+        width: 100%;
+    }
+
+}

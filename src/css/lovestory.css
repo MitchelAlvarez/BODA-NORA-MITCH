@@ -1,0 +1,409 @@
+.our-story {
+    align-content: center;
+    padding-top: 5rem;
+    /* width: 100%; */
+}
+
+.our-story--tittle {
+    margin: 0 auto;
+    /* width: 100%; */
+    text-align: center;
+    padding-bottom: 5rem;
+}
+
+.our-story--tittle h3 {
+    color: var(--clr-primary-dark);
+    padding-bottom: 1rem;
+    width: 100%;
+}
+
+.our-story--tittle h3,
+.our-story--tittle hr {
+    margin: 0 auto;
+}
+
+hr {
+    border: 0;
+    height: 5px;
+    width: 25%;
+    background: var(--clr-accent-dark);
+
+}
+
+.our-story--tittle hr {
+    width: 43%;
+}
+
+.lovestory {
+    position: relative;
+    max-width: 450px;
+    width: 100%;
+    margin: 0rem auto;
+    display: flex;
+    flex-direction: column;
+    /* Añadido */
+    box-sizing: border-box;
+    /* Añ
+    /* Añadido */
+}
+
+.lovestory::after {
+    content: '';
+    position: absolute;
+    width: 4px;
+    background-color: var(--clr-primary);
+    top: 0;
+    bottom: 0;
+    left: 51.5%;
+    margin-left: -1px;
+}
+
+.lovestory-item {
+    position: relative;
+    margin-bottom: 50px;
+    opacity: 0;
+}
+
+.lovestory-item--start::after {
+    content: '';
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    background-color: var(--clr-primary);
+    /* border: 2px solid black; */
+    border-radius: 50%;
+    top: -2.8rem;
+    left: 50%;
+    margin-left: -10px;
+    z-index: 1;
+}
+
+.lovestory-item--after {
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: var(--clr-primary);
+    border-radius: 50%;
+    margin-left: -10px;
+    z-index: 1;
+    align-content: center;
+}
+
+.right .lovestory-content .lovestory-item--after {
+    top: 0rem;
+    right: 113%;
+}
+
+.left .lovestory-content .lovestory-item--after {
+    top: 0rem;
+    left: 116%;
+}
+
+.lovestory-item--after img {
+    width: 3rem;
+    height: auto;
+    margin: 7px;
+}
+
+/* .lovestory-item--end::after {
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: var(--clr-accent-dark);
+    border: 2px solid black;
+    border-radius: 50%;
+    left: 48%;
+    margin-left: -10px;
+    z-index: 2;
+} */
+
+.lovestory-item.left .lovestory-content-l {
+    left: 70%;
+    top: -6rem;
+}
+
+.lovestory-item.left .lovestory-content {
+    left: -6%;
+    top: 9rem;
+    text-align: end;
+    width: 47%;
+}
+
+.lovestory-item.right .lovestory-content {
+    left: 65%;
+    top: 9rem;
+    width: 60%;
+}
+
+.lovestory-item.right .lovestory-content-r {
+    left: -55%;
+}
+
+.lovestory-content,
+.lovestory-content-r,
+.lovestory-content-l {
+    position: relative;
+    left: 30px;
+}
+
+.lovestory-content--image {
+    top: -6rem;
+    width: 90%;
+    text-align: center;
+}
+
+.lovestory-date {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.lovestory-description,
+.lovestory-description--date {
+    margin-bottom: 10px;
+}
+
+.lovestory-description p,
+.lovestory-description--date p {
+    font-size: 2rem;
+}
+
+.lovestory-image--container {
+    border-radius: 50%;
+    width: 20rem;
+    height: 20rem;
+    margin: 0 auto;
+}
+
+
+.image-1,
+.image-3,
+.image-5 {
+    background-image: url(../images/img1-webp.webp);
+    background-position: center 30%;
+}
+
+.image-2,
+.image-4,
+.image-6 {
+    background-image: url(../images/img1-webp.webp);
+    background-position: center 30%;
+}
+
+.image-3 {
+    top: 5rem;
+}
+
+.lovestory-date b {
+    font-size: 2rem;
+}
+
+
+/*---------------------*/
+@media only screen and (max-width: 600px) {
+    .our-story--tittle hr {
+        width: 100%;
+    }
+
+    .lovestory {
+        /* max-width: 350px; */
+        width: 100%;
+        overflow-x: hidden;
+        margin: 0 0;
+    }
+
+    .lovestory::after {
+        top: 1rem;
+        bottom: 0rem;
+        left: 49.5%;
+        margin-left: 0;
+    }
+
+    .lovestory-item {
+        height: 280px
+    }
+
+    .lovestory-item--start::after {
+        width: 40px;
+        height: 40px;
+        top: .5rem;
+        left: 45%;
+        margin-left: 0;
+        z-index: 1;
+    }
+
+    .lovestory-item--end::after {
+        width: 40px;
+        height: 40px;
+        left: 45%;
+        margin-left: 0;
+        z-index: 1;
+        bottom: 1rem;
+    }
+
+    .lovestory-image--container {
+        background-size: cover;
+        width: 12rem;
+        height: 12rem;
+    }
+
+    .lovestory-date b {
+        font-size: 1.5rem;
+    }
+
+    .lovestory-description p,
+    .lovestory-description--date p {
+        font-size: 1.5rem;
+    }
+
+    .lovestory-content--image {
+        /*Este controla todos los div de imagen y texto*/
+        width: 50%;
+        text-align: center;
+    }
+
+    .lovestory-item.right .lovestory-content-r {
+        /*Este controla los div de imagen y texto del lado izquierdo*/
+        left: -3%;
+        top: -1.5rem;
+    }
+
+    .lovestory-item.left .lovestory-content-l {
+        /*Este controla los div de imagen y texto del lado derecho*/
+        left: 52%;
+        top: -1rem;
+    }
+
+    .lovestory-item.right .lovestory-content {
+        left: 59.5%;
+        top: 9rem;
+        width: 40%;
+    }
+
+    .lovestory-item.left .lovestory-content {
+        left: -6%;
+    }
+
+    .lovestory-item--after {
+        width: 40px;
+        height: 40px;
+        margin-left: -3px;
+    }
+
+    .lovestory-item--after img {
+        width: 2rem;
+        height: auto;
+        margin: 7px;
+    }
+
+    .right .lovestory-content .lovestory-item--after {
+        top: 0rem;
+        /* right: 115%; */
+    }
+
+    .left .lovestory-content .lovestory-item--after {
+        left: 18.5rem;
+    }
+
+    .lovestory-description {
+        width: 80%;
+        /* Reduce el ancho al 80%. Ajusta este valor según tus necesidades */
+        margin: 0 auto;
+        /* Centra el div horizontalmente */
+        text-align: center;
+        /* Centra el texto dentro del div */
+    }
+
+}
+
+@media only screen and (max-width: 419px) {
+
+    .lovestory-item.left .lovestory-content {
+        left: -8%;
+    }
+
+
+}
+
+@media only screen and (max-width: 390px) {
+
+    .left .lovestory-content .lovestory-item--after {
+        left: 17.5rem;
+    }
+
+    .right .lovestory-content .lovestory-item--after {
+        right: 112%;
+    }
+
+}
+
+@media only screen and (max-width: 375px) {
+
+    .left .lovestory-content .lovestory-item--after {
+        left: 16.5rem;
+    }
+
+    .right .lovestory-content .lovestory-item--after {
+        right: 111%;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+
+    .lovestory-item.left .lovestory-content {
+        left: -9%;
+    }
+
+    .left .lovestory-content .lovestory-item--after {
+        left: 16.3rem;
+    }
+
+
+}
+
+
+
+
+.show {
+    opacity: 1;
+}
+
+
+@media (prefers-reduced-motion: no-preference) {
+    .bounce-in-right {
+        animation-duration: 1.5s;
+        animation-timing-function: ease-out;
+        animation-delay: 0s;
+        animation-name: bounce;
+        /*animation: 1.5s ease-out 0s alternate bounce;*/
+    }
+
+    .bounce-in-left {
+        animation-duration: 1.5s;
+        animation-timing-function: ease-out;
+        animation-delay: 0s;
+        animation-name: bounce-left;
+        /*animation: 1.5s ease-out 0s alternate bounce;*/
+    }
+
+    @keyframes bounce {
+        from {
+            transform: translateX(-100%);
+        }
+
+        to {
+            transform: translateX(0);
+        }
+    }
+
+    @keyframes bounce-left {
+        from {
+            transform: translateX(100%);
+        }
+
+        to {
+            transform: translateX(0);
+        }
+    }
+}

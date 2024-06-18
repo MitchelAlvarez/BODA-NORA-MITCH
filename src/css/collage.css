@@ -1,0 +1,221 @@
+.collage {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+    grid-gap: 10px;
+    grid-auto-rows: 200px;
+    padding: 0rem 2rem;
+}
+
+.nosotros-img-container {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px;
+}
+
+.nosotros-img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.nosotros-foto1 {
+    grid-column: 1/2;
+    grid-row: 1/3;
+}
+
+.nosotros-foto2 img,
+.nosotros-foto3 img,
+.nosotros-foto4 img {
+    object-position: 50% 30%;
+}
+
+.nosotros-foto5 {
+    grid-column: 3/4;
+    grid-row: 2/5;
+}
+
+.nosotros-foto6 {
+    grid-column: 1/3;
+    grid-row: 3/5;
+}
+
+.nosotros-foto6 img {
+    object-position: 50% 70%;
+}
+
+.nosotros-img-container:hover img {
+    transform: scale(1.3);
+    cursor: pointer;
+}
+
+.carousel-container {
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    display: none;
+    z-index: 2;
+}
+
+.image-box {
+    width: 70vw;
+    height: 80vh;
+    position: fixed;
+    top: 50%;
+    left: 52%;
+    transform: translate(-50%, -50%);
+    display: none;
+
+}
+
+.image-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#prev-btn,
+#next-btn {
+    width: 0;
+    height: 0;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+
+#prev-btn {
+    border-right: 40px solid rgb(207, 207, 207);
+    left: -50px;
+}
+
+#next-btn {
+    border-left: 40px solid rgb(207, 207, 207);
+    right: -50px;
+}
+
+#next-btn:hover,
+#prev-btn:hover {
+    opacity: 0.6;
+}
+
+#close-btn {
+    background-color: grey;
+    right: 5rem;
+    top: 2rem;
+    border-radius: 50%;
+    width: 3rem;
+    height: 3rem;
+    position: absolute;
+    transform: translateY(-50%);
+    cursor: pointer;
+    align-content: end;
+    text-align: center;
+    color: white;
+    font-size: 3rem;
+}
+
+
+@media screen and (max-width: 768px) {
+    .collage {
+        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+        grid-gap: 5px;
+        padding: 0.3em;
+    }
+
+    .nosotros-img-container:hover img {
+        transform: none;
+    }
+
+    .image-box {
+        width: 70vw;
+        height: auto;
+        position: fixed;
+        top: 50%;
+        left: 52%;
+        transform: translate(-50%, -50%);
+        display: none;
+
+    }
+
+    .image-box img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+
+    .nosotros-foto2 img,
+    .nosotros-foto3 img,
+    .nosotros-foto4 img {
+        object-position: 50% 30%;
+    }
+
+    .nosotros-foto5 {
+        grid-column: 3/4;
+        grid-row: 2/4;
+    }
+
+    .nosotros-foto6 {
+        grid-column: 1/3;
+        grid-row: 3/4;
+    }
+
+    .nosotros-foto6 img {
+        object-position: 50% 25%;
+    }
+
+    #next-btn:hover,
+    #prev-btn:hover {
+        opacity: 1;
+    }
+
+}
+
+@media screen and (max-width: 430px) {
+    .collage {
+        grid-template-columns: repeat(auto-fill, minmax(100px, 215px));
+    }
+
+    .image-box img {
+        width: 98vw;
+        height: 100%;
+        margin-left: -5rem;
+    }
+
+    .nosotros-foto1 {
+        grid-column: 1/1;
+    }
+
+    .nosotros-foto2,
+    .nosotros-foto4 {
+        grid-column: 2/3;
+    }
+
+    .nosotros-foto1 img {
+        object-position: 25% 30%;
+    }
+
+    .nosotros-foto2 img {
+        object-position: 37% 30%;
+    }
+
+    .nosotros-foto3 img {
+        object-position: 25% 30%;
+    }
+
+    #close-btn {
+        right: 3rem;
+        top: 12rem;
+        font-weight: bold;
+        transform: 0;
+        font-size: 2.5rem;
+    }
+
+}

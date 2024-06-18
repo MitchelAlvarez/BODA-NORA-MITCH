@@ -1,0 +1,156 @@
+.rsvp {
+    background-color: white;
+    padding: 3rem 0;
+    justify-content: center;
+}
+
+.title-rsvp {
+    text-align: center;
+}
+
+.rsvp-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    width: 100%;
+    padding-right: calc(var(--bs-gutter-x)* .5);
+    padding-left: calc(var(--bs-gutter-x)* .5);
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.rsvp-imagen--container {
+    width: 50%;
+    height: 100%;
+    padding: 2rem;
+    flex: 0 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.rsvp-imagen {
+    position: relative;
+    width: 60%;
+    height: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.rsvp-imagen::before {
+    background-image: url(../images/forma.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+}
+
+.rsvp-imagen img {
+    position: relative;
+    z-index: 1;
+    width: 35rem;
+    height: 29rem;
+    object-fit: cover;
+    object-position: center;
+}
+
+.rsvp-form {
+    width: 50%;
+    height: 100%;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-message {
+    text-align: center;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding-bottom: 2rem;
+}
+
+.form-message h3 {
+    color: var(--clr-primary);
+    font-size: 3rem;
+}
+
+.form-message p {
+    font-size: 1.5rem;
+}
+
+@media screen and (max-width: 768px) {
+    .rsvp-container {
+        flex-direction: column;
+    }
+
+    .rsvp-imagen--container {
+        width: 58%;
+    }
+
+    .rsvp-imagen {
+        width: 100%;
+    }
+
+    .rsvp-imagen img {
+        height: 26rem;
+    }
+
+    .rsvp-form {
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 430px) {
+
+    .rsvp-imagen--container {
+        width: 84%;
+    }
+
+    .rsvp-imagen img {
+        height: 21rem;
+    }
+
+}
+
+@media screen and (max-width: 430px) {
+
+    .rsvp-imagen--container {
+        width: 88%;
+    }
+
+}
+
+@media screen and (max-width: 390px) {
+
+    .rsvp-imagen img {
+        height: 18rem;
+    }
+
+}
+
+@media screen and (max-width: 360px) {
+
+    .rsvp-imagen--container {
+        width: 102%;
+    }
+
+    .rsvp-imagen img {
+        height: 21rem;
+    }
+
+}

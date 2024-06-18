@@ -1,0 +1,46 @@
+{
+    "itinerario": [
+        {
+            "id": 1,
+            "nombre": "Cóctel",
+            "hora": "6:00pm",
+            "icon": "/public/assets/icons/salud.png",
+            "class": "info-coctel"
+        },
+        {
+            "id": 2,
+            "nombre": "Entrada novios",
+            "hora": " 6:50pm",
+            "icon": "/public/assets/icons/entrada_novios.png",
+            "class": "info-entrada"
+        },
+        {
+            "id": 3,
+            "nombre": "Cena",
+            "hora": "7:00pm",
+            "icon": "/public/assets/icons/cena.png",
+            "class": "info-cena"
+        },
+        {
+            "id": 4,
+            "nombre": "Vals",
+            "hora": "08:00pm",
+            "icon": "/public/assets/icons/vals.png",
+            "class": "info-vals"
+        },
+        {
+            "id": 5,
+            "nombre": "Fiesta",
+            "hora": "08:15pm",
+            "icon": "/public/assets/icons/fiesta.png",
+            "class": "info-fiesta"
+        },
+        {
+            "id": 6,
+            "nombre": "Fin del evento",
+            "hora": "2:00am",
+            "icon": "/public/assets/icons/fin.png",
+            "class": "info-fin"
+        }
+    ]
+}

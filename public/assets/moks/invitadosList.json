@@ -1,0 +1,52 @@
+{
+  "invitados": [
+    {
+      "id": 1,
+      "invitado_id": 1,
+      "nombre": "Ricardo Ramos",
+      "telefono": "331-123-4567",
+      "asistencia": "SI",
+      "numero_de_invitados_max": 3,
+      "numero_de_invitados": 2,
+      "invitacion_enviada": "No",
+      "recordatori_1": "No",
+      "recordatori_2": "No"
+    },
+    {
+      "id": 2,
+      "invitado_id": 1,
+      "nombre": "Melissa Pamhuada",
+      "telefono": "331-123-4567",
+      "asistencia": "SI",
+      "numero_de_invitados_max": 3,
+      "numero_de_invitados": 2,
+      "invitacion_enviada": "No",
+      "recordatori_1": "No",
+      "recordatori_2": "No"
+    },
+    {
+      "id": 3,
+      "invitado_id": 2,
+      "nombre": "Miguel Cobian",
+      "telefono": "331-123-4567",
+      "asistencia": "",
+      "numero_de_invitados_max": 2,
+      "numero_de_invitados": 0,
+      "invitacion_enviada": "No",
+      "recordatori_1": "No",
+      "recordatori_2": "No"
+    },
+    {
+      "id": 4,
+      "invitado_id": 3,
+      "nombre": "Ricardo Cobian",
+      "telefono": "331-123-4567",
+      "asistencia": "",
+      "numero_de_invitados_max": 2,
+      "numero_de_invitados": 0,
+      "invitacion_enviada": "No",
+      "recordatori_1": "No",
+      "recordatori_2": "No"
+    }
+  ]
+}

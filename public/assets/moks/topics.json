@@ -1,0 +1,39 @@
+{
+    "items": [
+        {
+            "id": 1,
+            "topic": "No Niños",
+            "imagen": "/public/assets/icons/ninos.png",
+            "body": "Esta noche es para los adultos, los <strong>niños se quedan en casa</strong>",
+            "body2": ""
+        },
+        {
+            "id": 2,
+            "topic": "Dress Code",
+            "imagen": "/public/assets/icons/vestimenta.png",
+            "body": "El código de vestimenta será <strong>Formal</strong>, <strong>Full Black</strong> y con <strong>Sneakers</strong>.",
+            "body2": "Da <i><a href='https://www.google.com/'>click aquí</a></i> para conocer más del concepto."
+        },
+        {
+            "id": 3,
+            "topic": "Calzado",
+            "imagen": "/public/assets/icons/sneakers.png",
+            "body": "Preferentemente lleva tus <strong>sneakers favoritos</strong>, de no ser así pueden llevar el calzado de su preferencia, solo tomen en cuenta que será <strong>jardín</strong>, hará algo de <strong>frío</strong> y <strong>no habrá pantuflas</strong>.",
+            "body2": ""
+        },
+        {
+            "id": 4,
+            "topic": "Uber",
+            "imagen": "/public/assets/icons/uber.png",
+            "body": "Recomendamos <strong>llegar en uber</strong> porque <strong>no habrá mucho estacionamiento</strong> y para que podamos agarrar la fiesta como se debe.",
+            "body2": ""
+        },
+        {
+            "id": 5,
+            "topic": "Abrigo",
+            "imagen": "/public/assets/icons/abrigo.png",
+            "body": "El salón es jardín y está al <strong>aire libre</strong>, te recomendamos llevar un <strong>abrigo</strong> porque hará algo de <strong>frío</strong>.",
+            "body2": ""
+        }
+    ]
+}

@@ -1,0 +1,201 @@
+.evento-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 100%;
+    position: relative;
+    justify-content: center;
+    margin: 5rem 0rem;
+
+}
+
+.container-secondary {
+    background-image: url(../images/portada.webp);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.evento-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.evento-title h2 {
+    color: var(--clr-text-second);
+}
+
+.cards-container--evento {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    width: 100%;
+    justify-content: center;
+    z-index: 1;
+    padding: 2rem 2rem
+}
+
+.card1 {
+    max-height: 434.5px;
+    /* Establece una altura máxima */
+    overflow: hidden;
+    /* Oculta el contenido que se desborda */
+}
+
+.card1.expanded {
+    max-height: none;
+    /* Elimina la altura máxima */
+}
+
+.card-tittle h3 {
+    color: var(--clr-primary);
+}
+
+.card-body--text p {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--clr-text);
+
+}
+
+.card-body--info *,
+.card-body--info2 * {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    padding: .5rem 0;
+}
+
+.item-body--text {
+    padding-top: 1.3rem;
+}
+
+.info-date--text.item-body--text {
+    padding-top: 2rem;
+}
+
+.item-body--text p,
+.item-body--text strong {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: var(--clr-text);
+}
+
+.card-icon img {
+    width: 4.5rem;
+    height: auto;
+}
+
+.see-more--card,
+.see-less--card {
+    width: 80%;
+    padding-left: 23rem;
+    font-size: 1.1rem;
+}
+
+.btn {
+    border: 0;
+    text-align: center;
+    display: inline-block;
+    padding: 14px;
+    width: 150px;
+    margin: 7px;
+    color: var(--clr-text-second);
+    background-color: var(--clr-primary-dark);
+    border-radius: 8px;
+    font-family: "proxima-nova-soft", sans-serif;
+    font-weight: 600;
+    text-decoration: none;
+    transition: box-shadow 200ms ease-out;
+
+}
+
+@media screen and (max-width: 1300px) {
+    .card1 {
+        max-height: 460.7px;
+    }
+
+    .see-more--card,
+    .see-less--card {
+        width: 90%;
+        padding-left: 20rem;
+    }
+
+    .card-event .card-tittle h3 {
+        font-size: 2.5rem;
+    }
+}
+
+@media screen and (max-width: 1180px) {
+
+    .card-event .card-tittle h3 {
+        font-size: 2rem;
+    }
+
+    .see-more--card,
+    .see-less--card {
+        width: 90%;
+        padding-left: 17rem;
+    }
+}
+
+@media screen and (max-width: 992px) {
+
+    .card-event .card-tittle h3 {
+        font-size: 1.5rem;
+    }
+
+    .see-more--card,
+    .see-less--card {
+        width: 90%;
+        padding-left: 11rem;
+    }
+}
+
+@media screen and (max-width: 992px) {
+
+    .item-body--text p,
+    .item-body--text strong {
+        font-size: 1rem;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .evento-container {
+        padding: 1.5rem;
+        margin: 0rem;
+    }
+
+    .cards-container--evento {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .card-body--text p {
+        font-size: 1.3rem;
+    }
+
+    .item-body--text p {
+        font-size: 1.1rem;
+    }
+
+    .see-more--card,
+    .see-less--card {
+        padding-left: 15rem;
+    }
+
+}
+
+@media screen and (max-width: 400px) {
+
+    .see-more--card,
+    .see-less--card {
+        padding-left: 12rem;
+    }
+}

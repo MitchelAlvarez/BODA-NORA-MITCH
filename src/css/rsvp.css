@@ -1,0 +1,119 @@
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.label {
+    width: max-content;
+    /* margin: 9px auto; */
+    display: grid;
+    grid-template-areas: "input";
+}
+
+.input {
+    grid-area: input;
+    width: 300px;
+    font: inherit;
+    border-radius: 10px;
+    border: 1px solid gray;
+    padding: .7rem 1.5rem;
+}
+
+.input:where(:focus,
+    :not(:placeholder-shown))+.label_input {
+    transform: translateY(-50%) scale(.7);
+    background-color: white;
+}
+
+.label_input {
+    grid-area: input;
+    z-index: 100px;
+    width: max-content;
+    margin-left: 1rem;
+    padding: 0 .5rem;
+    align-self: center;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.label-nombre-container {
+    position: relative;
+}
+
+.mostrar-invitados {
+    position: absolute;
+    width: 300px;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    padding: 1rem;
+    z-index: 2;
+    background-color: white;
+    display: none;
+}
+
+.mostrar-invitados ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+
+}
+
+.mostrar-invitados ul:hover {
+    background-color: aliceblue;
+    cursor: pointer;
+
+}
+
+.show-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.radio,
+.numero-de-invitados {
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
+    margin: 24px 0px;
+}
+
+.numero-de-invitados {
+    display: flex;
+    flex-direction: row;
+    gap: 2px;
+    margin: 24px 0px;
+
+}
+
+.btn-calc {
+    /* margin: 9px auto; */
+    width: 2.5rem;
+    height: 2.5rem;
+    border: 0;
+    border-radius: 8px;
+    transition: box-shadow 200ms ease-out;
+    color: var(--clr-text-second);
+    background-color: var(--clr-primary-dark);
+}
+
+.btn {
+    border: 0;
+    text-align: center;
+    display: inline-block;
+    padding: 14px;
+    width: 150px;
+    margin: 7px;
+    color: var(--clr-text-second);
+    background-color: var(--clr-primary-dark);
+    border-radius: 8px;
+    font-family: "proxima-nova-soft", sans-serif;
+    font-weight: 600;
+    text-decoration: none;
+    transition: box-shadow 200ms ease-out;
+
+}

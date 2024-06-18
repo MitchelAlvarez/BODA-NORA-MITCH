@@ -1,0 +1,58 @@
+{
+    "items": [
+        {
+            "id": 1,
+            "event": "Tinder Match",
+            "date": "Julio 2019",
+            "phrase": "Algo nuevo",
+            "side": "right",
+            "shortSide": "r",
+            "imgSrc": "/public/images/icons/tinder.png"
+        },
+        {
+            "id": 2,
+            "event": "Primer encuentro",
+            "date": "Septiembre 2019",
+            "phrase": "Todo sucedió en una cancha de basket",
+            "side": "left",
+            "shortSide": "l",
+            "imgSrc": "/public/images/icons/calendario.png"
+        },
+        {
+            "id": 3,
+            "event": "¿Quieres ser mi novia?",
+            "date": "Noviembre 2019",
+            "phrase": "¡La cena nunca llegó!",
+            "side": "right",
+            "shortSide": "r",
+            "imgSrc": "/public/images/icons/lupa.png"
+        },
+        {
+            "id": 4,
+            "event": "Viviendo juntos",
+            "date": "Mayo 2022",
+            "phrase": "Un nuevo comienzo",
+            "side": "left",
+            "shortSide": "l",
+            "imgSrc": "/public/images/icons/llaves.png"
+        },
+        {
+            "id": 5,
+            "event": "La propuesta",
+            "date": "Febrero 2023",
+            "phrase": "A la mitad de un puente en Nueva York",
+            "side": "right",
+            "shortSide": "r",
+            "imgSrc": "/public/images/icons/anillo_compromiso.png"
+        },
+        {
+            "id": 6,
+            "event": "El Civil",
+            "date": "Febrero 2024",
+            "phrase": "¡Si acepto!",
+            "side": "left",
+            "shortSide": "l",
+            "imgSrc": "/public/images/icons/anillo_compromiso.png"
+        }
+    ]
+}

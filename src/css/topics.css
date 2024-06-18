@@ -1,0 +1,107 @@
+.topics {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 100%;
+    position: relative;
+    justify-content: center;
+    padding: 5rem;
+
+}
+
+.topics::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.topic-title {
+    text-align: center;
+}
+
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+    gap: 2rem;
+    width: 100%;
+    justify-content: center;
+    z-index: 1;
+    padding: 2rem 2rem
+}
+
+.card-topic {
+    width: 100%;
+}
+
+.card-body--icon {
+    text-align: center;
+}
+
+.card-body--icon img {
+    width: 35%;
+    height: auto;
+
+}
+
+.card-body--text_topics {
+    text-align: center;
+}
+
+.card-body--text_topics p {
+    font-size: 2rem;
+    line-height: 3rem;
+
+}
+
+.card-automatic {
+    /* height: 566.77px; */
+    overflow: hidden;
+}
+
+.subtopic {
+    padding-top: 1rem;
+}
+
+.card-body2 {
+    padding-bottom: 1rem;
+}
+
+.steps-cruda {
+    padding-bottom: .5rem;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .topics {
+        padding: 1.5rem;
+        margin: 0rem;
+    }
+
+    .cards-container {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .card-body--text_topics p {
+        font-size: 1.5rem;
+        line-height: 2.5rem;
+
+    }
+
+    .card-topic {
+        width: 80%;
+    }
+
+}
+
+@media screen and (max-width: 430px) {
+
+    .card-topic {
+        width: 70%;
+    }
+
+}
