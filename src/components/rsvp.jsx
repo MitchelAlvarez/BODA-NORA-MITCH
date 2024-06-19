@@ -1,5 +1,4 @@
 import { useState, useEffect } from 'react';
-import invitadosList from '/public/assets/moks/invitadosList.json';
 import '../css/title.css'
 import '../css/rsvpContainer.css';
 import '../css/rsvp.css';
@@ -37,13 +36,17 @@ export default function RSVP() {
             fetch('api/data?num_invitados=0')
                 .then(response => response.json())
                 .then(data => {
-                    const invitados = data.invitados.map(mapInvitadoData);
-                    setInvitadosList(invitados);
-                    const invitadosListaFiltrada = invitados.filter(invitado =>
-                        invitado.nombre.toLowerCase().includes(nombre.toLowerCase())
-                    );
-                    setInvitadosFiltrados(invitadosListaFiltrada);
-                    console.log(invitadosFiltrados); // Para ver los resultados en la consola
+                    if (Array.isArray(data)) {
+                        const invitados = data.map(mapInvitadoData);
+                        setInvitadosList(invitados);
+                        const invitadosListaFiltrada = invitados.filter(invitado =>
+                            invitado.nombre.toLowerCase().includes(nombre.toLowerCase())
+                        );
+                        setInvitadosFiltrados(invitadosListaFiltrada);
+                        console.log(invitadosFiltrados); // Para ver los resultados en la consola
+                    } else {
+                        console.error('Unexpected data format: ', data);
+                    }
                 })
                 .catch(error => {
                     console.error('Error fetching data: ', error);
@@ -76,6 +79,7 @@ export default function RSVP() {
                 document.getElementById('numInvitados').value = invitado.numero_de_invitados_max;
                 setInvitadoNumero(invitado.numero_de_invitados_max);
                 setInvitado_id(invitado.invitado_id);
+                console.log(invitado.invitado_id, invitado.numero_de_invitados_max, invitado.nombre)
             }
         })
         setDisableBtnRest(false)
@@ -152,8 +156,9 @@ export default function RSVP() {
 
     function mapInvitadoData(invitadoData) {
         return {
-            id: invitadoData.invitado_id,
-            nombre: invitadoData.nombre_invitado,
+            invitado_id: invitadoData.invitado_id,
+            nombre: invitadoData.nombre,
+            numero_de_invitados_max: invitadoData.num_invitados_max,
         };
     }
 

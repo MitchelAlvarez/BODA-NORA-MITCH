@@ -1,0 +1,7 @@
+RewriteEngine On
+RewriteBase /boda-nora-mitch/
+RewriteRule ^index\.html$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-l
+RewriteRule . /boda-nora-mitch/index.html [L]
