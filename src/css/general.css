@@ -1,0 +1,12 @@
+/*animacion de titulos*/
+.title-animation {
+    /* Define el tamaño inicial del elemento */
+    transform: scale(0.5);
+    /* Define la transición para suavizar el cambio de tamaño */
+    transition: transform 0.5s ease-in;
+}
+
+/* Define el tamaño final del elemento cuando el usuario hace scroll y el elemento está en el viewport */
+.title-animation.in-view {
+    transform: scale(1);
+}

@@ -3,9 +3,11 @@ import reloj from '/src/images/icons/reloj1.png';
 import reloj2 from '/src/images/icons/reloj2.png';
 import ubicacion from '/src/images/icons/ubicacion.png';
 import timeLine from '/public/assets/moks/itinerario.json'
+import useViewportAnimation from '../hooks/useAnimationTitle.js';
 import '../css/title.css'
 import '../css/evento.css';
 import '../css/cards.css';
+import '../css/general.css';
 
 
 export default function Evento() {
@@ -16,6 +18,8 @@ export default function Evento() {
     const card1 = useRef(null);
 
     let itinerario = timeLine.itinerario;
+
+    useViewportAnimation();
 
     useEffect(() => {
         lessLink.current.style.display = 'none';
@@ -35,9 +39,11 @@ export default function Evento() {
         }
     }
 
+
+
     return (
         <section className="evento-container container-secondary">
-            <div className="evento-title">
+            <div className="evento-title title-animation">
                 <h2>Detalles del evento</h2>
                 <span className='tittle-divider divider-secondary'></span>
             </div>

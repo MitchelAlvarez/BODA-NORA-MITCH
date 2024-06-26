@@ -2,9 +2,11 @@ import { useState, useEffect } from 'react';
 import '../css/title.css'
 import '../css/rsvpContainer.css';
 import '../css/rsvp.css';
+import '../css/general.css';
 import { useInvitado } from '../hooks/useInvitado';
 import { debounce, set } from 'lodash';
 import portada2 from '/src/images/portada2.webp';
+import useViewportAnimation from '../hooks/useAnimationTitle.js';
 
 export default function RSVP() {
     const { respnseCall, updateInvitados } = useInvitado()
@@ -19,6 +21,8 @@ export default function RSVP() {
     const [disableBtnSum, setDisableBtnSum] = useState(true)
     const [disableBtnRest, setDisableBtnRest] = useState(true)
     const [disableNumInvitados, setDisableNumInvitados] = useState(true)
+
+    useViewportAnimation();
 
     useEffect(() => {
         if (nombre !== '') {
@@ -164,7 +168,7 @@ export default function RSVP() {
 
     return (
         <section className="rsvp">
-            <div className="title-rsvp">
+            <div className="title-rsvp title-animation">
                 <h2>Confirmación de Asistencia</h2>
                 <span className='tittle-divider divider-secondary'></span>
             </div>

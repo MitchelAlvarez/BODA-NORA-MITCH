@@ -1,9 +1,12 @@
 import { useEffect, useRef, useState } from 'react';
 import topics from '/public/assets/moks/topics.json';
 import kit from '/public/assets/moks/kitcruda.json';
+import useViewportAnimation from '../hooks/useAnimationTitle.js';
 import '../css/title.css'
 import '../css/cards.css';
 import '../css/topics.css';
+import '../css/general.css';
+
 
 
 export default function Topics() {
@@ -13,6 +16,8 @@ export default function Topics() {
 
     let importantTopics = topics.items;
     let steps = kit.steps;
+
+    useViewportAnimation();
 
     useEffect(() => {
         lessLink.current.style.display = 'none';
@@ -33,7 +38,7 @@ export default function Topics() {
     }
     return (
         <section className="topics">
-            <div className="topic-title ">
+            <div className="topic-title title-animation">
                 <h2>Informacion Importante</h2>
                 <span className='tittle-divider divider-secondary'></span>
             </div>
