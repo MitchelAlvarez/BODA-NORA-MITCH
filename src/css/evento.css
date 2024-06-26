@@ -5,7 +5,7 @@
     width: 100%;
     position: relative;
     justify-content: center;
-    margin: 5rem 0rem;
+    margin: 0rem 0rem;
 
 }
 
@@ -27,7 +27,7 @@
 }
 
 .evento-title h2 {
-    color: var(--clr-text-second);
+    color: var(--clr-text);
 }
 
 .cards-container--evento {
@@ -53,7 +53,7 @@
 }
 
 .card-tittle h3 {
-    color: var(--clr-primary);
+    color: var(--clr-text);
 }
 
 .card-body--text p {
@@ -88,7 +88,7 @@
 
 .card-icon img {
     width: 4.5rem;
-    height: auto;
+    height: 65.6px;
 }
 
 .see-more--card,
@@ -98,6 +98,8 @@
     font-size: 1.1rem;
 }
 
+
+
 .btn {
     border: 0;
     text-align: center;
@@ -106,7 +108,7 @@
     width: 150px;
     margin: 7px;
     color: var(--clr-text-second);
-    background-color: var(--clr-primary-dark);
+    background-color: black;
     border-radius: 8px;
     font-family: "proxima-nova-soft", sans-serif;
     font-weight: 600;

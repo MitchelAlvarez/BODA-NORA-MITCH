@@ -9,15 +9,6 @@
 
 }
 
-.topics::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
-
 .topic-title {
     text-align: center;
 }
@@ -32,9 +23,9 @@
     padding: 2rem 2rem
 }
 
-.card-topic {
+/* .card-topic {
     width: 100%;
-}
+} */
 
 .card-body--icon {
     text-align: center;
@@ -73,9 +64,15 @@
     padding-bottom: .5rem;
 }
 
-
+@media screen and (max-width: 1192px) {
+    .cards-container {
+        grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    }
+}
 
 @media screen and (max-width: 768px) {
+
+
     .topics {
         padding: 1.5rem;
         margin: 0rem;
@@ -92,16 +89,17 @@
 
     }
 
-    .card-topic {
+    /* .card-topic {
         width: 80%;
-    }
+        margin: auto;
+    } */
 
 }
 
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 450px) {
 
-    .card-topic {
-        width: 70%;
+    .cards-container {
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     }
 
 }

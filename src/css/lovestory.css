@@ -2,6 +2,7 @@
     align-content: center;
     padding-top: 5rem;
     /* width: 100%; */
+    background-color: black;
 }
 
 .our-story--tittle {
@@ -11,13 +12,13 @@
     padding-bottom: 5rem;
 }
 
-.our-story--tittle h3 {
-    color: var(--clr-primary-dark);
+.our-story--tittle h2 {
+    color: var(--clr-text-second);
     padding-bottom: 1rem;
     width: 100%;
 }
 
-.our-story--tittle h3,
+.our-story--tittle h2,
 .our-story--tittle hr {
     margin: 0 auto;
 }
@@ -51,7 +52,7 @@ hr {
     content: '';
     position: absolute;
     width: 4px;
-    background-color: var(--clr-primary);
+    background-color: var(--clr-accent);
     top: 0;
     bottom: 0;
     left: 51.5%;
@@ -69,7 +70,7 @@ hr {
     position: absolute;
     width: 35px;
     height: 35px;
-    background-color: var(--clr-primary);
+    background-color: var(--clr-accent);
     /* border: 2px solid black; */
     border-radius: 50%;
     top: -2.8rem;
@@ -83,7 +84,7 @@ hr {
     position: absolute;
     width: 50px;
     height: 50px;
-    background-color: var(--clr-primary);
+    background-color: var(--clr-accent);
     border-radius: 50%;
     margin-left: -10px;
     z-index: 1;
@@ -157,6 +158,7 @@ hr {
 .lovestory-date {
     font-weight: bold;
     margin-bottom: 10px;
+    color: var(--clr-text-second);
 }
 
 .lovestory-description,
@@ -167,6 +169,11 @@ hr {
 .lovestory-description p,
 .lovestory-description--date p {
     font-size: 2rem;
+    color: var(--clr-text-second);
+}
+
+.lovestory-description {
+    padding-top: 1rem;
 }
 
 .lovestory-image--container {
@@ -177,7 +184,13 @@ hr {
 }
 
 
-.image-1,
+.image-1 {
+    background-image: url(../images/match.webp);
+    background-position: 99% -45%;
+    /* background-size: cover; */
+    background-size: 250px 350px;
+}
+
 .image-3,
 .image-5 {
     background-image: url(../images/img1-webp.webp);
@@ -313,6 +326,13 @@ hr {
         /* Centra el div horizontalmente */
         text-align: center;
         /* Centra el texto dentro del div */
+    }
+
+    .image-1 {
+        background-image: url(../images/match.webp);
+        background-position: 99% -9%;
+        /* background-size: cover; */
+        background-size: 150px 250px;
     }
 
 }

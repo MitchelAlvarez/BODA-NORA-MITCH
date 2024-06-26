@@ -34,7 +34,7 @@ export default function Topics() {
     return (
         <section className="topics">
             <div className="topic-title ">
-                <h2>Temas Importantes</h2>
+                <h2>Informacion Importante</h2>
                 <span className='tittle-divider divider-secondary'></span>
             </div>
             <div className="cards-container">

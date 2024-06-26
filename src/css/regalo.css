@@ -29,6 +29,7 @@
 
 .card-regalo--message {
     text-align: start;
+    padding: 0rem 2rem;
 }
 
 .card-regalo--message p {
@@ -91,6 +92,19 @@
     margin: 0 auto;
 }
 
+.front-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.front-container b {
+    font-size: 1.5rem;
+
+}
+
 /* .flip-card-front {
     background-color: #bbb;
     color: black;
@@ -99,7 +113,7 @@
 .flip-card-front img {
     width: 25%;
     height: auto;
-    margin: o auto;
+    margin: 0 auto;
 }
 
 .flip-card-back {

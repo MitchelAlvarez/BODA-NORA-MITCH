@@ -52,6 +52,8 @@ form {
     z-index: 2;
     background-color: white;
     display: none;
+    max-height: 400px;
+    overflow-y: auto;
 }
 
 .mostrar-invitados ul {
@@ -98,7 +100,7 @@ form {
     border-radius: 8px;
     transition: box-shadow 200ms ease-out;
     color: var(--clr-text-second);
-    background-color: var(--clr-primary-dark);
+    background-color: var(--clr-text);
 }
 
 .btn {
@@ -109,7 +111,7 @@ form {
     width: 150px;
     margin: 7px;
     color: var(--clr-text-second);
-    background-color: var(--clr-primary-dark);
+    background-color: var(--clr-text);
     border-radius: 8px;
     font-family: "proxima-nova-soft", sans-serif;
     font-weight: 600;

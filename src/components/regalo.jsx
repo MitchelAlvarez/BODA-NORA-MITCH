@@ -2,7 +2,7 @@ import { useState } from 'react';
 import '../css/title.css'
 import '../css/cards.css';
 import '../css/regalo.css';
-import tin from '/public/assets/icons/tinder.png';
+import tin from '/public/assets/icons/entrada_novios.png';
 
 export default function Regalo() {
     const [isFlipped, setIsFlipped] = useState(false);
@@ -26,14 +26,15 @@ export default function Regalo() {
                         <p>Al ya vivir juntos desde hace un par de años tenemos casi todo lo necesario para nuestro hogar,
                             así que si de todas formas desean darnos un regalo, les agradeceríamos puedan cooperar con nuestro
                             <strong> Honeymoon Fund</strong> (fondo para nuestra luna de miel) esto puede ser en sobre el día
-                            de la boda o en transferencia bancaria a la siguiente cuenta: </p><br />
+                            de la boda o en transferencia bancaria.</p><br />
                     </div>
                 </div>
                 <div className={`card card-regalo flip-card ${isFlipped ? 'flipped' : ''}`} onClick={handleClickFlip}>
                     <div className="card-regalo--message flip-card-front">
                         <div className="front-container">
+                            <b>Datos bancarios </b>
                             <img src={tin} alt="tin" /><br />
-                            <p>Datos bancarios </p>
+
                         </div>
                     </div>
                     <div className="card-regalo--cuenta card-regalo--message flip-card-back">

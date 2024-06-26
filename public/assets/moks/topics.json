@@ -12,7 +12,7 @@
             "topic": "Dress Code",
             "imagen": "/public/assets/icons/vestimenta.png",
             "body": "El código de vestimenta será <strong>Formal</strong>, <strong>Full Black</strong> y con <strong>Sneakers</strong>.",
-            "body2": "Da <i><a href='https://www.google.com/'>click aquí</a></i> para conocer más del concepto."
+            "body2": "Da <i><a href='/public/assets/files/dresscode_guia.pdf' target='_blank'>click aquí</a></i> para conocer más del concepto."
         },
         {
             "id": 3,

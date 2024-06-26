@@ -1,19 +1,51 @@
-import { useState } from 'react'
-import Countdown from 'react-countdown'
-import Lovestory from './components/lovestory'
-import render from './components/counter'
-import Collage from './components/collage'
-import Evento from './components/evento'
-import Topics from './components/topics'
-import Regalo from './components/regalo'
-import RSVP from './components/rsvp'
+import React, { useRef, useEffect, useState } from 'react';
+import Countdown from 'react-countdown';
+import Lovestory from './components/lovestory';
+import render from './components/counter';
+import Collage from './components/collage';
+import Evento from './components/evento';
+import Topics from './components/topics';
+import Regalo from './components/regalo';
+import RSVP from './components/rsvp';
 import monogramaNegro from '/src/images/monograma_negro.png';
 import instagram from '/src/images/icons/instagram.png';
+import soundIcon from '/src/images/icons/sonido_negro.png';
+import mutedIcon from '/src/images/icons/mute_negro.png';
+import mySong from '/public/assets/music/asi_te_pedi.mp3';
+import './css/App.css';
+import InvitadosPanel from './components/invitadosPanel';
 
-import './css/App.css'
-import InvitadosPanel from './components/invitadosPanel'
 function App() {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(0);
+  const [music, setMusic] = useState(false);
+  const myAudio = useRef(null);
+  const [audioContext, setAudioContext] = useState(null);
+
+  // useEffect(() => {
+  //   if (music) {
+  //     myAudio.current.play();
+  //   } else {
+  //     myAudio.current.pause();
+  //   }
+  // }, [music]);
+
+
+  // useEffect(() => {
+  //   const handleUserInteraction = () => {
+  //     if (!audioContext) {
+  //       const context = new (window.AudioContext || window.webkitAudioContext)();
+  //       setAudioContext(context);
+  //       setMusic(true);
+  //       document.removeEventListener('click', handleUserInteraction);
+  //     }
+  //   };
+
+  //   document.addEventListener('click', handleUserInteraction);
+
+  //   return () => {
+  //     document.removeEventListener('click', handleUserInteraction);
+  //   };
+  // }, [audioContext]);
 
   return (
     <>
@@ -42,9 +74,7 @@ function App() {
           />
         </section>
         <section className="welcome-message">
-          <p>Tenemos el honor de invitarlos al evento, que sin duda, será uno de los más<br />
-            importantes de nuestras vidas. Queremos que nos acompañen para vivir y <br />
-            recordar juntos este día, ya que no sería lo mismo sin nuestros seres queridos.<br />< br />
+          <p>Tenemos el honor de invitarlos al evento, que sin duda, será uno de los más importantes de nuestras vidas. Queremos que nos acompañen para vivir y recordar juntos este día, ya que no sería lo mismo sin nuestros seres queridos.<br /><br />
             ¡Los esperamos para darlo todo!<br /></p>
           <span className="welcome-message--span"></span>
         </section>
@@ -54,6 +84,16 @@ function App() {
         <Topics />
         <Regalo />
         <RSVP />
+        <audio ref={myAudio} src={mySong} type="audio/mp3" loop />
+        <div className="music_container">
+          <div className="music-button" onClick={() => setMusic(!music)}>
+            {
+              music
+                ? <img src={soundIcon} alt="sound" />
+                : <img src={mutedIcon} alt="mute" />
+            }
+          </div>
+        </div>
         <section className="goodbye-container evento-container container-secondary">
           <div className="goodbye-message">
             <h3>No podemos esperar para festejar nuestra Boda con ustedes</h3>
@@ -65,10 +105,9 @@ function App() {
         <p>Design and powered by youareinvite.com<br />
           ¡Creamos la invitación para tu evento!</p>
         <img src={instagram} alt="instagram" />
-
       </footer>
     </>
-  )
+  );
 }
 
-export default App
+export default App;

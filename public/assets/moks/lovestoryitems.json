@@ -7,7 +7,7 @@
             "phrase": "Algo nuevo",
             "side": "right",
             "shortSide": "r",
-            "imgSrc": "/public/images/icons/tinder.png"
+            "imgSrc": "/public/assets/icons/tinder_white.png"
         },
         {
             "id": 2,
@@ -16,7 +16,7 @@
             "phrase": "Todo sucedió en una cancha de basket",
             "side": "left",
             "shortSide": "l",
-            "imgSrc": "/public/images/icons/calendario.png"
+            "imgSrc": "/public/assets/icons/calendario.png"
         },
         {
             "id": 3,
@@ -25,7 +25,7 @@
             "phrase": "¡La cena nunca llegó!",
             "side": "right",
             "shortSide": "r",
-            "imgSrc": "/public/images/icons/lupa.png"
+            "imgSrc": "/public/assets/icons/lupa.png"
         },
         {
             "id": 4,
@@ -34,7 +34,7 @@
             "phrase": "Un nuevo comienzo",
             "side": "left",
             "shortSide": "l",
-            "imgSrc": "/public/images/icons/llaves.png"
+            "imgSrc": "/public/assets/icons/llaves.png"
         },
         {
             "id": 5,
@@ -43,7 +43,7 @@
             "phrase": "A la mitad de un puente en Nueva York",
             "side": "right",
             "shortSide": "r",
-            "imgSrc": "/public/images/icons/anillo_compromiso.png"
+            "imgSrc": "/public/assets/icons/anillo_compromiso.png"
         },
         {
             "id": 6,
@@ -52,7 +52,7 @@
             "phrase": "¡Si acepto!",
             "side": "left",
             "shortSide": "l",
-            "imgSrc": "/public/images/icons/anillo_compromiso.png"
+            "imgSrc": "/public/assets/icons/anillos_matrimonio.png"
         }
     ]
 }

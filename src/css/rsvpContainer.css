@@ -84,7 +84,7 @@
 }
 
 .form-message h3 {
-    color: var(--clr-primary);
+    color: var(--clr-text);
     font-size: 3rem;
 }
 

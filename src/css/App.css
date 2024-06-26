@@ -27,6 +27,16 @@ body {
     font-size: 1rem;
 }
 
+body,
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow-x: hidden;
+}
+
 .root {
     display: flex;
     flex-direction: column;
@@ -112,7 +122,7 @@ h1 {
 h2 {
     font-family: var(--font-principal);
     font-size: 4rem;
-    color: var(--clr-primary-dark);
+    color: var(--clr-text);
 }
 
 h3 {
@@ -129,19 +139,20 @@ h3 {
 }
 
 .header-text h2 {
-    background-color: rgba(253, 253, 253, 0.5)
+    background-color: rgba(253, 253, 253, 0.2)
 }
 
 /*------MAIN------*/
 main {
-    background-color: #ecece6;
+    /* background-color: #ecece6;*/
+    background-color: #E2E2E2;
 }
 
 .counter {
     width: 100%;
     max-width: 121rem;
     /* Ajusta este valor según tus necesidades */
-    background-color: var(--clr-primary);
+    background-color: var(--clr-text);
     text-align: center;
     position: relative;
     margin: 0 auto;
@@ -196,9 +207,10 @@ main {
 .welcome-message {
     display: block;
     text-align: center;
-    padding: orem 2rem;
-    color: var(--clr-primary);
+    padding: 0rem 2rem;
+    color: var(--clr-text);
     font-size: xx-large;
+    padding-bottom: 5rem;
 }
 
 .welcome-message--span {
@@ -211,6 +223,43 @@ main {
     height: 5rem;
     width: 28rem;
     margin-top: 1rem;
+}
+
+.music_container {
+    position: fixed;
+    bottom: 6rem;
+    left: 95%;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+    width: 3.6rem;
+    height: 3.6rem;
+    z-index: 9;
+    border-radius: 50%;
+}
+
+.music-button {
+    width: 3rem;
+    height: 3rem;
+    background: var(--clr-text-second);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: .2s;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+
+}
+
+.music-button img {
+    position: absolute;
+    width: 3rem;
+    height: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    transition: .2s;
 }
 
 .goodbye-container {
@@ -237,13 +286,13 @@ main {
 /*------FOOTER------*/
 footer {
     height: 78px;
-    background-color: var(--clr-primary-dark);
+    background-color: var(--clr-accent);
     text-align: center;
     color: white;
 }
 
 footer p {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     line-height: 1.5;
 }
 
@@ -258,6 +307,7 @@ footer img {
 
 /* Estilos para pantallas medianas (tabletas, etc.) */
 @media (min-width: 768px) {
+
     .welcome-message--span {
         height: 5rem;
     }
@@ -265,6 +315,10 @@ footer img {
     .counter {
         width: 70%;
         /* Ajusta este valor según tus necesidades */
+    }
+
+    .music_container {
+        left: 90%;
     }
 }
 
@@ -318,8 +372,13 @@ footer img {
         /* Ajusta el tamaño del número según tus necesidades */
     }
 
+
     .welcome-message {
         font-size: large;
+    }
+
+    .music_container {
+        left: 87%;
     }
 
 
@@ -332,5 +391,9 @@ footer img {
 
     h2 {
         font-size: 2.5rem;
+    }
+
+    .music_container {
+        left: 79%;
     }
 }

@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
-import reloj from '/src/images/icons/reloj.png';
+import reloj from '/src/images/icons/reloj1.png';
+import reloj2 from '/src/images/icons/reloj2.png';
 import ubicacion from '/src/images/icons/ubicacion.png';
 import timeLine from '/public/assets/moks/itinerario.json'
 import '../css/title.css'
@@ -83,7 +84,7 @@ export default function Evento() {
                         </div>
                         <div className="card-body--info">
                             <div className="info-date">
-                                <div className="info-date--icon card-icon"><img src={reloj} alt="hora" /></div>
+                                <div className="info-date--icon card-icon"><img src={reloj2} alt="hora" /></div>
                                 <div className="info-date--text item-body--text">
                                     <strong>6:00pm</strong>
                                 </div>
