@@ -191,7 +191,38 @@ hr {
     background-size: 250px 350px;
 }
 
-.image-3,
+.image-2 {
+    background-image: url(../images/primer_encuentro.webp);
+    background-size: cover;
+    background-position: center center;
+}
+
+.image-3 {
+    background-image: url(../images/novios.webp);
+    background-size: cover;
+    background-position: center center;
+}
+
+.image-4 {
+    background-image: url(../images/nuevo_comienzo.webp);
+    background-size: cover;
+    background-position: center center;
+}
+
+.image-5 {
+    background-image: url(../images/propuesta.webp);
+    background-size: cover;
+    background-position: center center;
+}
+
+.image-6 {
+    background-image: url(../images/acepto.webp);
+    background-size: cover;
+    background-position: center center;
+}
+
+
+/* .image-3,
 .image-5 {
     background-image: url(../images/img1-webp.webp);
     background-position: center 30%;
@@ -206,7 +237,7 @@ hr {
 
 .image-3 {
     top: 5rem;
-}
+} */
 
 .lovestory-date b {
     font-size: 2rem;
@@ -217,6 +248,10 @@ hr {
 @media only screen and (max-width: 600px) {
     .our-story--tittle hr {
         width: 100%;
+    }
+
+    .our-story--tittle h2 {
+        padding-top: .8rem;
     }
 
     .lovestory {

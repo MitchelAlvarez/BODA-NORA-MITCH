@@ -12,15 +12,15 @@ export default function Regalo() {
     }
     return (
         <section className="regalo-container container-secondary">
-            {/*<div className="evento-title">
-                <h2>Mesa de Regalo</h2>
+            <div className="evento-title regalo-title">
+                <h2>Regalo de Bodas</h2>
                 <span className='tittle-divider divider-secondary'></span>
-            </div> */}
+            </div>
 
             <div className="cards-container--regalo cards-container--evento">
                 <div className="card card-regalo">
-                    <div className="card-tittle"><h3>Regalo de Boda</h3></div>
-                    <hr className="card-hr" />
+                    {/*<div className="card-tittle"><h3>Regalo de Boda</h3></div>
+                    <hr className="card-hr" />*/}
                     <div className="card-regalo--message">
                         <p>En todo momento este evento fue planeado para disfrutarlo con ustedes, así que el mayor regalo es que estén ahí con nosotros disfrutando y dando el 110%</p><br />
                         <p>Al ya vivir juntos desde hace un par de años tenemos casi todo lo necesario para nuestro hogar,
@@ -30,7 +30,7 @@ export default function Regalo() {
                     </div>
                 </div>
                 <div className={`card card-regalo flip-card ${isFlipped ? 'flipped' : ''}`} onClick={handleClickFlip}>
-                    <div className="card-regalo--message flip-card-front">
+                    <div className="flip-card-front">
                         <div className="front-container">
                             <b>Datos bancarios </b>
                             <img src={tin} alt="tin" /><br />
@@ -39,11 +39,10 @@ export default function Regalo() {
                     </div>
                     <div className="card-regalo--cuenta card-regalo--message flip-card-back">
                         <div className="back-container">
-                            <p> Nombre: <strong>Jose Luis</strong><br />
-                                Apellido: <strong>Alvarez</strong><br />
-                                Banco: <strong>BBVA</strong><br />
-                                Numero tarjeta: <strong>0123456789</strong><br />
-                                Clabe: <strong>0123456789</strong></p>
+                            <p> Nombre: <strong>Nora Patiño López</strong><br />
+                                Banco: <strong>HSBC</strong><br />
+                                Cuenta: <strong>021320064317747489</strong><br />
+                                Concepto: <strong>Regalo de Bodas</strong></p>
                         </div>
 
                     </div>

@@ -10,6 +10,7 @@
     /*--ff-title: "BFNarrow", sans-serif;
     --ff-serif: "Crimson Text", serif;
     --ff-logo: "BetterFly", sans-serif;*/
+    --font-title: "Prata", sans-serif;
 
 }
 
@@ -55,7 +56,7 @@ header {
     align-items: center;
     background-image: url(../images/portada.webp);
     background-size: cover;
-    background-attachment: fixed;
+    background-attachment: scroll;
     background-position: center 5%;
     background-repeat: no-repeat;
 
@@ -112,7 +113,7 @@ nav ul li a:hover {
 }
 
 h1 {
-    font-family: var(--font-principal);
+    font-family: var(--font-title);
     font-size: 7rem;
     /* color: var(--clr-text); */
     color: var(--clr-text-second);
@@ -120,15 +121,22 @@ h1 {
 }
 
 h2 {
-    font-family: var(--font-principal);
+    font-family: var(--font-title);
     font-size: 4rem;
     color: var(--clr-text);
 }
 
 h3 {
-    font-family: var(--font-principal);
+    font-family: var(--font-title);
     font-size: 3rem;
     color: var(--clr-text-second);
+}
+
+p,
+i,
+b,
+strong {
+    font-weight: 300;
 }
 
 .header-text h1,
@@ -215,7 +223,7 @@ main {
 
 .welcome-message--span {
     background-image: var(--separador-img);
-    background-size: cover;
+    background-size: 90%;
     background-position: center center;
     background-repeat: no-repeat;
     display: block;
@@ -266,6 +274,10 @@ main {
     text-align: center;
     height: 30rem;
     margin: 0rem;
+    background-image: url(../images/portada_4.webp);
+    background-size: cover;
+    background-position: center 35%;
+    background-repeat: no-repeat;
 }
 
 
@@ -285,8 +297,8 @@ main {
 
 /*------FOOTER------*/
 footer {
-    height: 78px;
-    background-color: var(--clr-accent);
+    height: 80px;
+    background-color: var(--clr-text);
     text-align: center;
     color: white;
 }
@@ -381,6 +393,12 @@ footer img {
         left: 87%;
     }
 
+    .goodbye-container {
+        background-image: url(../images/portada_4.webp);
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
 
 }
 

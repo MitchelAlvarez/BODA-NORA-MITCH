@@ -9,7 +9,7 @@ const renderer = ({ days, hours, minutes, seconds, completed }) => {
             <div className='countdown-text'>
                 <div className='countdown_date countdown_date--day'>
                     <span id="day_number" className='countdown_number'>{days}</span>
-                    <span id="day_label" className='countdown_label'>Dias</span>
+                    <span id="day_label" className='countdown_label'>Días</span>
                 </div>
                 <div className='countdown_date countdown_date--hour'>
                     <span id="hour_number" className='countdown_number'>{hours}</span>

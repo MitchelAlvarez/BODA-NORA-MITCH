@@ -18,12 +18,13 @@ form {
     border-radius: 10px;
     border: 1px solid gray;
     padding: .7rem 1.5rem;
+    background-color: #E2E2E2;
 }
 
 .input:where(:focus,
     :not(:placeholder-shown))+.label_input {
     transform: translateY(-50%) scale(.7);
-    background-color: white;
+    background-color: #E2E2E2;
 }
 
 .label_input {

@@ -67,7 +67,7 @@ export default function Evento() {
                             <div className="info-address">
                                 <div className="info-address--icon card-icon"> <img src={ubicacion} alt="ubicacion" /></div>
                                 <div className="info-address--text item-body--text">
-                                    <strong>Av Providencia 2958,h <br />
+                                    <strong>Av Providencia 2958, <br />
                                         Providencia 4a. Secc, 44639 Guadalajara, Jal.
                                     </strong>
                                 </div>

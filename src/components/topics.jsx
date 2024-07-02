@@ -39,7 +39,7 @@ export default function Topics() {
     return (
         <section className="topics">
             <div className="topic-title title-animation">
-                <h2>Informacion Importante</h2>
+                <h2>Información Importante</h2>
                 <span className='tittle-divider divider-secondary'></span>
             </div>
             <div className="cards-container">

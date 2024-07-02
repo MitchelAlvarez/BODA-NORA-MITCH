@@ -28,15 +28,6 @@ export default function RSVP() {
         if (nombre !== '') {
             document.getElementsByClassName('mostrar-invitados')[0].classList.add('show-list');
 
-            //     const invitadosListaFiltrada = invitadosList.invitados.filter(invitado =>
-            //         invitado.nombre.toLowerCase().includes(nombre.toLowerCase())
-            //     );
-            //     setInvitadosFiltrados(invitadosListaFiltrada);
-            //     console.log(invitadosFiltrados); // Para ver los resultados en la consola
-            // } else {
-            //     document.getElementsByClassName('mostrar-invitados')[0].classList.remove('show-list');
-            // }
-            // Llamada a la API para obtener la lista de invitados
             fetch('api/data?num_invitados=0')
                 .then(response => response.json())
                 .then(data => {
@@ -213,7 +204,7 @@ export default function RSVP() {
                             </label>
                             <button type="button" className="rest-invitado btn-calc" disabled={disableBtnSum} onClick={() => handleSumRest('sum')}>+</button>
                         </div>
-                        <input type="submit" value="Submit" className='submit btn' />
+                        <input type="submit" value="Enviar" className='submit btn' />
                     </form>
 
                 </div>

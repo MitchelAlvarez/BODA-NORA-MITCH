@@ -21,32 +21,6 @@ function App() {
   const myAudio = useRef(null);
   const [audioContext, setAudioContext] = useState(null);
 
-  // useEffect(() => {
-  //   if (music) {
-  //     myAudio.current.play();
-  //   } else {
-  //     myAudio.current.pause();
-  //   }
-  // }, [music]);
-
-
-  // useEffect(() => {
-  //   const handleUserInteraction = () => {
-  //     if (!audioContext) {
-  //       const context = new (window.AudioContext || window.webkitAudioContext)();
-  //       setAudioContext(context);
-  //       setMusic(true);
-  //       document.removeEventListener('click', handleUserInteraction);
-  //     }
-  //   };
-
-  //   document.addEventListener('click', handleUserInteraction);
-
-  //   return () => {
-  //     document.removeEventListener('click', handleUserInteraction);
-  //   };
-  // }, [audioContext]);
-
   return (
     <>
       <header>
