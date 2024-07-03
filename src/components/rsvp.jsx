@@ -158,7 +158,7 @@ export default function RSVP() {
     }
 
     return (
-        <section className="rsvp">
+        <section id='rsvp' className="rsvp">
             <div className="title-rsvp title-animation">
                 <h2>Confirmación de Asistencia</h2>
                 <span className='tittle-divider divider-secondary'></span>

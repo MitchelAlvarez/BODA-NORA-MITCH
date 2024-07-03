@@ -54,7 +54,7 @@ export default function Lovestory() {
     }, []);
 
     return (
-        <section className='our-story'>
+        <section id='lovestory' className='our-story'>
             <div className="our-story--tittle">
                 <hr className='hr-tittle' />
                 <h2>Nuestra Historia de Amor</h2>

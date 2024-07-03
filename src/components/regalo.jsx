@@ -11,7 +11,7 @@ export default function Regalo() {
         setIsFlipped(!isFlipped);
     }
     return (
-        <section className="regalo-container container-secondary">
+        <section id='regalo' className="regalo-container container-secondary">
             <div className="evento-title regalo-title">
                 <h2>Regalo de Bodas</h2>
                 <span className='tittle-divider divider-secondary'></span>

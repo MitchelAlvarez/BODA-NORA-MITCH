@@ -42,7 +42,7 @@ export default function Evento() {
 
 
     return (
-        <section className="evento-container container-secondary">
+        <section id='evento' className="evento-container container-secondary">
             <div className="evento-title title-animation">
                 <h2>Detalles del evento</h2>
                 <span className='tittle-divider divider-secondary'></span>

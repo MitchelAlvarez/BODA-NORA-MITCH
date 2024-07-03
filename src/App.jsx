@@ -26,9 +26,12 @@ function App() {
       <header>
         <nav className='menu'>
           <ul>
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#">Servicios</a></li>
-            <li><a href="#">Contacto</a></li>
+            <li><a href="#contador">Inicio</a></li>
+            <li><a href="#lovestory">Historia de amor</a></li>
+            <li><a href="#evento">Evento</a></li>
+            <li><a href="#topics">Temas importantes</a></li>
+            <li><a href="#regalo">Regalo</a></li>
+            <li><a href="#rsvp">RSVP</a></li>
           </ul>
         </nav>
         <div className="header-monograma">
@@ -36,11 +39,12 @@ function App() {
         </div>
         <div className="header-text">
           {/* {<h1>Nora & Mitch</h1>} */}
-          <h2>We are getting married</h2>
+          <h1>NORA & MITCH</h1>
+          <p>We are getting married</p>
         </div>
       </header>
       <main>
-        <section className="counter">
+        <section id='contador' className="counter">
           <h3 className="title-date">16 Noviembre 2024</h3>
           <Countdown
             date={'2024-11-16T16:30:00'}

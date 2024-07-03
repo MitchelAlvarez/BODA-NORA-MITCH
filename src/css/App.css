@@ -117,7 +117,7 @@ h1 {
     font-size: 7rem;
     /* color: var(--clr-text); */
     color: var(--clr-text-second);
-    background-color: rgba(0, 0, 0, 0.5)
+    /* background-color: rgba(0, 0, 0, 0.5) */
 }
 
 h2 {
@@ -136,18 +136,20 @@ p,
 i,
 b,
 strong {
+    font-family: var(--font-principal);
     font-weight: 300;
 }
 
-.header-text h1,
-.header-text h2,
-.header-text h3 {
-    margin-bottom: 1.5rem;
+.header-text h1 {
+    margin-bottom: 2.5rem;
     /* Ajusta este valor según tus necesidades */
 }
 
-.header-text h2 {
-    background-color: rgba(253, 253, 253, 0.2)
+.header-text p {
+    font-size: 3.5rem;
+    color: var(--clr-text-second);
+    /* Ajusta este valor según tus necesidades */
+
 }
 
 /*------MAIN------*/
@@ -353,6 +355,18 @@ footer img {
 
     .header-text {
         top: 48rem;
+    }
+
+    .header-text h1 {
+        margin-bottom: 1.5rem;
+        /* Ajusta este valor según tus necesidades */
+    }
+
+    .header-text p {
+        font-size: 2rem;
+        color: var(--clr-text-second);
+        /* Ajusta este valor según tus necesidades */
+
     }
 
     h1 {

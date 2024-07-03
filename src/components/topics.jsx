@@ -37,7 +37,7 @@ export default function Topics() {
         }
     }
     return (
-        <section className="topics">
+        <section id='topics' className="topics">
             <div className="topic-title title-animation">
                 <h2>Información Importante</h2>
                 <span className='tittle-divider divider-secondary'></span>
