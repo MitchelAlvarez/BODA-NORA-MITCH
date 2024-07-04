@@ -5,7 +5,7 @@ import '../css/rsvp.css';
 import '../css/general.css';
 import { useInvitado } from '../hooks/useInvitado';
 import { debounce, set } from 'lodash';
-import portada2 from '/src/images/portada2.webp';
+import portada2 from '/src/images/rsvp_image.webp';
 import useViewportAnimation from '../hooks/useAnimationTitle.js';
 
 export default function RSVP() {

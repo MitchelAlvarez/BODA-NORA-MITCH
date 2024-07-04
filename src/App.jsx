@@ -11,7 +11,7 @@ import monogramaNegro from '/src/images/monograma_negro.png';
 import instagram from '/src/images/icons/instagram.png';
 import soundIcon from '/src/images/icons/sonido_negro.png';
 import mutedIcon from '/src/images/icons/mute_negro.png';
-import mySong from '/public/assets/music/asi_te_pedi.mp3';
+import mySong from './music/asi_te_pedi.mp3';
 import './css/App.css';
 import InvitadosPanel from './components/invitadosPanel';
 
@@ -20,6 +20,14 @@ function App() {
   const [music, setMusic] = useState(false);
   const myAudio = useRef(null);
   const [audioContext, setAudioContext] = useState(null);
+
+  useEffect(() => {
+    if (music) {
+      myAudio.current.play();
+    } else {
+      myAudio.current.pause();
+    }
+  }, [music])
 
   return (
     <>

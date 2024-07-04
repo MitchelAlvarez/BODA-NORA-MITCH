@@ -68,18 +68,21 @@ nav {
     /* Esto hace que el nav se fije en su posición */
     top: 0;
     /* Esto alinea el nav a la parte superior de la pantalla */
-    height: 10%;
+    height: 5%;
     width: 100%;
+    z-index: 9999;
 }
 
 nav ul {
     display: grid;
-    grid-template-columns: repeat(3, 7rem);
+    grid-template-columns: repeat(6, 20rem);
     gap: 1rem;
     /* Esto establece el espacio entre los elementos de la cuadrícula */
     list-style: none;
     padding-right: 1rem;
     justify-content: end;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
 }
 
 nav ul li {
@@ -137,12 +140,24 @@ i,
 b,
 strong {
     font-family: var(--font-principal);
+
+}
+
+p,
+i {
     font-weight: 300;
 }
 
 .header-text h1 {
     margin-bottom: 2.5rem;
     /* Ajusta este valor según tus necesidades */
+}
+
+@media screen and (max-height: 845px) {
+    .header-text h1 {
+        margin-bottom: 1.5rem;
+        /* Ajusta este valor según tus necesidades */
+    }
 }
 
 .header-text p {
@@ -344,7 +359,7 @@ footer img {
     }
 
     nav {
-        width: 100%;
+        display: none;
         /* Esto hace que el nav tenga el ancho completo en pantallas pequeñas */
     }
 
@@ -358,7 +373,7 @@ footer img {
     }
 
     .header-text h1 {
-        margin-bottom: 1.5rem;
+        margin-bottom: 7.5rem;
         /* Ajusta este valor según tus necesidades */
     }
 
@@ -421,11 +436,18 @@ footer img {
         margin-top: 1rem;
     }
 
+    .counter h3 {
+        font-size: 2.7rem;
+
+    }
+
     h2 {
         font-size: 2.5rem;
     }
 
+
     .music_container {
         left: 79%;
     }
+
 }

@@ -378,6 +378,21 @@ hr {
         left: -8%;
     }
 
+    .lovestory-image--container {
+        background-size: cover;
+        width: 11rem;
+        height: 11rem;
+    }
+
+    .lovestory-date b {
+        font-size: 1.3rem;
+    }
+
+    .lovestory-description p,
+    .lovestory-description--date p {
+        font-size: 1.3rem;
+    }
+
 
 }
 
@@ -412,6 +427,21 @@ hr {
 
     .left .lovestory-content .lovestory-item--after {
         left: 16.3rem;
+    }
+
+    .lovestory-image--container {
+        background-size: cover;
+        width: 10rem;
+        height: 10rem;
+    }
+
+    .lovestory-date b {
+        font-size: 1.2rem;
+    }
+
+    .lovestory-description p,
+    .lovestory-description--date p {
+        font-size: 1.2rem;
     }
 
 

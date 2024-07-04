@@ -74,7 +74,7 @@ export default function Evento() {
                             </div>
                         </div>
                         <div className="card-body-button">
-                            <button className="btn btn-primary">Ver Mapa</button>
+                            <a href='https://maps.app.goo.gl/HCpB37c8UWtZFLJA9' target='_blank' className="btn btn-primary">Ver Mapa</a>
                         </div>
 
                     </div>
@@ -123,8 +123,7 @@ export default function Evento() {
                             <a ref={lessLink} href="" className="see-more--card" onClick={handleClick('less')}>Ver menos...</a>
                         </div>
                         <div className="card-body-button">
-                            <button className="btn btn-primary">Ver Mapa</button>
-                            <a href=""></a>
+                            <a href='https://maps.app.goo.gl/3rF3Fo7rhseS5aA69' target='_blank' className="btn btn-primary">Ver Mapa</a>
                         </div>
                     </div>
                 </div>

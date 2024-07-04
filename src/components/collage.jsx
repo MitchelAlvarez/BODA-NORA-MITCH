@@ -130,7 +130,7 @@ export default function Collage() {
                     <div ref={prevBtnRef} id="prev-btn" onClick={handlePrevClick}></div>
                     <div ref={nextBtnRef} id="next-btn" onClick={handleNextClick}></div>
                 </div>
-                <div id="close-btn" onClick={handleCloseClick}>×</div>
+                <div id="close-btn" onClick={handleCloseClick}><p>x</p></div>
             </div>
         </section>
     );

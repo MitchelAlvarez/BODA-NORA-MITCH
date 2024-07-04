@@ -114,7 +114,7 @@
 #close-btn {
     background-color: grey;
     right: 5rem;
-    top: 2rem;
+    top: 5rem;
     border-radius: 50%;
     width: 3rem;
     height: 3rem;
@@ -124,6 +124,11 @@
     align-content: end;
     text-align: center;
     color: white;
+    font-size: 3rem;
+}
+
+#close-btn p {
+    margin-top: -1rem;
     font-size: 3rem;
 }
 

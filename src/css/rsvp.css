@@ -120,3 +120,8 @@ form {
     transition: box-shadow 200ms ease-out;
 
 }
+
+.btn:hover,
+.btn-calc:hover {
+    cursor: pointer;
+}
